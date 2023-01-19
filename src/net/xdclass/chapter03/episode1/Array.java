@@ -1,4 +1,3 @@
-package net.xdclass.chapter03.episode1;
 
 class Student {
     private String name;
@@ -29,5 +28,29 @@ public class Array {
             System.out.println(classRoom[i]);
         }
         System.out.println("init finished---------------");
+        // add record
+        classRoom[10] = new Student("stu10",12);
+        for (int i = 10; i < 11; i++) {
+            System.out.println(classRoom[i]);
+
+        }
+        System.out.println("add finished ------------------");
+
+        // delete index = 2
+        for (int i = 3; i < 11; i++) {
+            classRoom[i-1] =  classRoom[i];
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(classRoom[i]);
+
+        }
+        System.out.println("deleted finished ---------------");
+        // modify
+        classRoom[0] = new Student("modified student",20);
+        System.out.println(classRoom[0]);
+        System.out.println("modify finished---------------");
+        // check
+        System.out.println(classRoom[2]);
+        System.out.println("check finished----------------");
     }
 }
