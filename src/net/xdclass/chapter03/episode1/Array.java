@@ -1,4 +1,4 @@
-
+package net.xdclass.chapter03.episode1;
 class Student {
     private String name;
     private int age;
